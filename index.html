@@ -5,45 +5,295 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
-        
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
         <link rel="stylesheet" href="">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./assets/css/styles.css">
 
-        <title> Responsive portfolio website Ansel </title>
+        <title> Responsive portfolio website Samuel </title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            
+        <header class="header scroll-header" id="header">
+            <nav class="nav container">
+                <a href="" class="nav__logo">Samuel</a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <em class='bx bx-home-alt'></em>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#user" class="nav__link">
+                                <em class='bx bx-user'></em>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <em class='bx bx-book'></em>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <em class='bx bx-briefcase-alt-2'></em>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <em class='bx bx-message-alt-detail'></em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <em class='bx bx-moon change-theme' id="theme-button"></em>
+            </nav>
         </header>
 
         <!--=============== MAIN ===============-->
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Samuel Martinez</h1>
+                        <h3 class="home__education">Fullstack Developer</h3>
+                    </div>
+
+                    <div class="home__buttons">
+                        <a download="" href="./assets/pdf/cv-actual.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
+
+                    <div class="home__handle">
+                        <img src="./assets/img/perfil1-no.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/samuel-martinez-arreola/" class="home__social-link">
+                            <em class='bx bxl-linkedin-square'></em>
+                        </a>
+                        <a href="https://github.com/SamuelMtzA" class="home__social-link">
+                            <em class='bx bxl-github'></em>
+                        </a>
+                        <a href="https://twitter.com/Soyel_Samy" class="home__social-link">
+                            <em class='bx bxl-twitter'></em>
+                        </a>
+                    </div>
+
+                    <a href="@about" class="home__scroll">
+                        <em class='bx bx-mouse home__scroll-icon' ></em>
+                        <span class="home__scroll-name">Scroll Down</span>
+
+                    </a>
+                </div>
             </section>
             
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
-                
+                <span class="section__subtitle">My intro</span>
+                <h2 class="section__title">About me</h2>
+                <div class="about__container container grid">
+                    <img src="./assets/img/perfil-official.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <em class='bx bx-award about__icon'></em>
+                                <h3 class="about__title">Experience</h3>
+                                <span class="about__subtitle">>1 year working</span>
+                            </div>
+                            <div class="about__box">
+                                <em class='bx bx-briefcase-alt about__icon'></em>
+                                <h3 class="about__title">Completed</h3>
+                                <span class="about__subtitle">+10 projects</span>
+                            </div>
+                            <div class="about__box">
+                                <em class='bx bx-support about__icon'></em>
+                                <h3 class="about__title">Support</h3>
+                                <span class="about__subtitle">Online 24/7</span>
+                            </div>
+                        </div>
+                        <p class="about__description">
+                            I'm a Fullstack Developer with a background in Electronics engineering. 
+                            I have a passion for learning new technologies for SWE. 
+                            I'm currently working as a Backend Developer at
+                            <a href="https://www.infosys.com/" target="_blank">Infosys</a>
+                            where I work on different projects related to software development.
+                        </p>
+                        <a href="" class="button">Contact me</a>
+
+
+                    </div>
+                </div>
             </section>
 
             <!--=============== SKILLS ===============-->
             <section class="skills section" id="skills">
-                
+                <span class="section__subtitle">My abilities</span>
+                <h2 class="section__title">My Experience</h2>
+
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <h3 class="skills__title">FrontEnd Developer</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Basics</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Basics</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">GIT</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="skills__content">
+                        <h3 class="skills__title">Backend Developer</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+
+                                    <div>
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">Nodejs</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">Typescript</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <em class='bx bxs-badge-check'></em>
+                                    <div>
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--=============== SERVICES ===============-->
             <section class="services section">
-                
+                <span class="section__subtitle">My services</span>
+                <h2 class="section__title">What I Offer</h2>
+
+                <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__card">Product <br> Designer</h3>
+                        
+                        <span class="services__button">
+                            See more <em class='bx bx-right-arrow-alt'></em>
+                        </span>
+                    </div>
+
+                    <div class="services__card">
+                        <h3 class="services__card"></h3>
+                        
+                        <span class="services__button">
+                            See more <em class='bx bx-right-arrow-alt'></em>
+                        </span>
+                    </div>
+
+                    <div class="services__card">
+                        <h3 class="services__card"></h3>
+                        
+                        <span class="services__button">
+                            See more <em class='bx bx-right-arrow-alt'></em>
+                        </span>
+                    </div>
+                </div>
             </section>
 
             <!--=============== WORK ===============-->
@@ -77,6 +327,6 @@
         <script src=""></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
